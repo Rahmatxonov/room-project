@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    position: relative;
+}
+
+.container{
+    max-width: 1500px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@mixin for-tablet {
+    @media (max-width:1200px) {
+        @content;
+    }
+}
+@mixin for-bigtablet {
+    @media (max-width:1335px) {
+        @content;
+    }
+}
+ @mixin for-miniphone{
+    @media (max-width:440px){
+        @content;
+    }
+ }
+
+@mixin for-phone {
+    @media (max-width:760px) {
+        @content;
+    }
+}
+
+
+@import'./components/footer/footer.scss';
+@import'./components/navbar/navbar.scss';
+@import'./components/hero/hero.scss';
+@import'./components/mahsulotlar/mahsulotlar.scss';
+@import'./components/about/about.scss';
+@import'./components/mijozlar/mijozlar.scss';
+@import'./components/hamkorlar/hamkorlar.scss';
+@import'./components/shourumlar/shourumlar.scss';
+@import'./components/contact/contact.scss'

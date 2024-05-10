@@ -1,0 +1,217 @@
+.contact{
+    background-color: rgba(169, 169, 169, 0.269);
+    padding-top: 30px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    h3{
+        padding-bottom: 30px;
+        font-size: 32px;
+        font-weight: 700;
+        @include for-miniphone{
+            font-size: 29px;
+        }
+    }
+
+}
+.contact_box{
+    display: flex;
+    
+    @include for-tablet{
+        flex-direction: column;
+    }
+    &_left{
+        box-shadow: 1px 2px 22px 3px rgba(0,0,0,0.55);
+        background-color: black;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        max-width: 700px;
+        padding: 30px;
+        width: 100%;
+        @include for-tablet{
+            border-radius: 20px;
+            max-width: 100%;
+            width: 100%;
+        }
+        h4{
+            color: white;
+            font-size: 25px;
+            padding-bottom: 20px;
+            @include for-miniphone{
+                font-size: 23px;
+            }
+        }
+        p{
+            color: white;
+            font-size: 18px;
+            max-width: 600px;
+            line-height: 25px;
+            margin-bottom: 80px;
+            @include for-tablet{
+                max-width: 100%;
+            }
+            @include for-miniphone{
+                font-size: 16px;
+                
+            }
+        }
+      &_main{
+        display: flex;
+        // justify-content: center;
+        flex-direction: column;
+        margin-bottom: 80px;
+        row-gap: 12px;
+        span{
+            color:white;
+            display: flex;
+            column-gap: 10px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        span:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+      }
+      &_media{
+        display: flex;
+        column-gap: 10px;
+        span{
+            color: white;
+            font-size: 19px;
+            border-radius: 50%;
+            border: 1px solid white;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        span:hover{
+            cursor: pointer;
+        }
+      }
+    }
+}
+
+
+.contact_box_right{
+    box-shadow: 1px 2px 22px 3px rgba(0,0,0,0.55);
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 50px;
+    width: 100%;
+    @include for-tablet{
+        border-radius: 20px;
+    }
+    .form1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 25px;
+        @include for-tablet{
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+        }
+        input{
+            border: none;
+            border-bottom: 1px solid darkgray;
+            color: black;
+            padding: 10px;
+            outline: none;
+        }
+        input::placeholder{
+            color:black;
+            font-weight: 500;
+            font-size: 15px;
+            
+        }
+    }
+    h4{
+        padding-top: 40px;
+        font-size: 23px;
+        padding-bottom: 20px;
+    }
+    .form2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 20px;
+        @include for-tablet{
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+        label{
+            display: flex;
+            column-gap: 10px;
+            font-size: 18px;
+            
+        }
+     
+    }
+    textarea{
+          color: black;
+          padding: 15px;
+          width: 100%;
+          margin-top: 30px;
+          border: none;
+          margin-bottom: 30px;
+          border: 1px solid darkgray;
+    }
+    textarea::placeholder{
+        color: black;
+        font-size: 16px;
+    }
+}
+
+.tasdiqlash{
+    display: flex;
+    column-gap: 20px;
+    @include for-tablet{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+   &_main{
+      display: flex;
+      column-gap: 10px;
+      @include for-phone{
+        display: block;
+      }
+      p{
+        font-size: 19px;
+        max-width: 300px;
+        line-height: 24px;
+        @include for-tablet{
+            max-width: 100%;
+            padding-top: 10px;
+        }
+      }
+   }
+   button{
+    
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 5px 39px;
+    font-size: 16px;
+    font-weight: 400;
+   height: 50px;
+    @include for-tablet{
+        width: 140px;
+    }
+   }
+   button:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+
+}
+   }
+
+
+
+  

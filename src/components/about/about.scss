@@ -1,0 +1,143 @@
+.about{
+    display: flex;
+    justify-content: space-between;
+    // position: absolute;
+    margin-top: 60px;
+    @include for-tablet{
+        flex-direction: column;
+    }
+    &_left{
+        max-width: 600px;
+        box-shadow: 1px 2px 22px 3px rgba(0,0,0,0.55);
+        padding: 30px 30px;
+        border-radius: 20px;
+        z-index: 40;
+        background-color: white;
+        height: 350px;
+        margin-top: 90px;
+        position: relative;
+        right: -75px;
+        @include for-tablet{
+            margin-top: 0px;
+            margin-bottom: 20px;
+            @include for-tablet{
+                right: 0;
+            }
+        }
+        @include for-miniphone{
+            height: 550px;
+        }
+        p{
+            font-size: 19px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-weight: 500;
+        }
+        img{
+            width: 150px;
+        }
+        button{
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            column-gap: 10px;
+            background-color: black;
+            color: white;
+            border-radius: 30px;
+            padding: 5px 25px;
+            font-size: 16px;
+            font-weight: 400;
+           
+            
+           }
+           button:hover{
+            color: black;
+            background-color: white;
+            cursor: pointer;
+        
+    }
+        
+    }
+
+
+    &_right{
+        max-width: 1000px;
+        z-index: -10;
+        // position: relative;
+        right: 70px;
+        @include for-tablet{
+            right: 0;
+        }
+        img{
+            border-radius: 20px;
+            width: 100%;
+            height: 500px;
+            @include for-tablet{
+                width: 100%;
+            }
+            @include for-phone{
+                height: auto;
+                aspect-ratio: 2;
+
+            }
+        }
+    }
+}
+
+.about_work{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+    column-gap: 15px;
+    @include for-tablet{
+        margin-top: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+    &_blog{
+        border: 5px solid rgba(245, 223, 179, 0.457);
+        border-radius: 10px;
+        width: 350px;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        column-gap: 10px;
+        
+        @include for-tablet{
+            flex-direction: column;
+            align-items: baseline;
+            row-gap: 30px;
+            height: 300px;
+        }
+        @include for-phone{
+            width: 100%;
+            
+        }
+        span{
+            font-size: 34px;
+            font-weight: 800;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        p{
+            font-size: 17px;
+            padding-top: 10px;
+        }
+        img{
+            width: 100px;
+            @include for-tablet{
+                margin: 0 auto;
+                width: 140px;
+                height: 130px;
+            }
+            @include for-phone{
+                width: 130px;
+                height: 140px;
+            }
+            @include for-miniphone{
+                width: 80;
+                height: 100px;
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.mahsulotlar_title{
+    font-size: 32px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    @include for-miniphone{
+        font-size: 29px;
+    }
+}
+.mahsulotlar{
+    display: flex;
+    width: 100%;
+    column-gap: 0px;
+    &_blog{
+        max-width: 400px;
+        font-weight: 700;
+        font-size: 22px;
+        overflow: hidden;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        p{
+             font-weight: 400;
+            @include for-phone{
+                font-size: 17px;
+                font-weight: 400;
+            }
+            @include for-miniphone{
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+        img{
+            width: 100%;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            transition: all .5s ease;
+        }
+        img:hover{
+            transform: scale(1.04);
+            overflow: hidden;
+            cursor: pointer;
+        }
+    }
+}
+.mahsulotlar_hammasi{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.malumotlar_btn{
+       
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        column-gap: 10px;
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+        padding: 5px 25px;
+        font-size: 16px;
+        font-weight: 400;
+       
+        
+       }
+       button:hover{
+        color: black;
+        background-color: white;
+        cursor: pointer;
+    
+}
